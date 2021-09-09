@@ -21,6 +21,8 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+  
+
 development:
   <<: *default
   database: meds_api_development
@@ -51,6 +53,16 @@ development:
   #   log, notice, warning, error, fatal, and panic
   # Defaults to warning.
   #min_messages: notice
+  username: postgres
+
+  # The password associated with the postgres role (username).
+  password: Ryanh856
+
+
+  host: localhost
+
+
+  port: 5432
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -58,6 +70,17 @@ development:
 test:
   <<: *default
   database: meds_api_test
+
+  username: postgres
+
+  # The password associated with the postgres role (username).
+  password: Ryanh856
+
+
+  host: localhost
+
+
+  port: 5432
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -79,6 +102,7 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
+
 production:
   <<: *default
   database: meds_api_production
