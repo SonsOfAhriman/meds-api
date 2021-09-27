@@ -23,6 +23,10 @@ gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem "simple_token_authentication"
 
+gem 'pundit'
+
+gem 'rack-cors'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
