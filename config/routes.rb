@@ -5,9 +5,15 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: :json} do
     namespace :v1 do 
+
+      resources :prescriptions, only: [ :show, :create ]
+      resources :users, only: [ :show ]
+
+
       devise_scope :user do
         post "sign_up", to: "registrations#create"
         post "sign_in", to: "sessions#create"
+
       end
     end
   end
