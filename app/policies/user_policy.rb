@@ -6,11 +6,7 @@ class UserPolicy < ApplicationPolicy
   end
 
   def show?
-    if @user == record
-      true
-    else
-      false
-    end
+    true
   end
 
 end
