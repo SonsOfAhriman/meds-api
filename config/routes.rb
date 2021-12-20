@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do 
 
       resources :prescriptions, only: [ :show, :create ]
-      resources :users, only: [ :show ]
+      resources :users, only: [ :index, :show ]
 
 
       devise_scope :user do
