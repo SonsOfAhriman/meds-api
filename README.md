@@ -1,1 +1,6 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# Medi-App:
+
+Back-end:
+Back-end for https://github.com/SonsOfAhriman/Meds_App_FE/ 
+Built using Ruby on Rails to generate an API of User and Prescription data, interacting with the React.js front-end
+
